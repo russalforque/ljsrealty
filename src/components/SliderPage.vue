@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-full overflow-hidden">
+    <div class="relative w-full overflow-hidden mt-[90px]">
         <!-- Slider Wrapper -->
         <div class="flex transition-transform duration-500"
             :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
@@ -57,7 +57,7 @@ img {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: auto;
-    max-height: 75vh;
+    max-height: 70vh;
     object-fit: cover;
 }
 </style>

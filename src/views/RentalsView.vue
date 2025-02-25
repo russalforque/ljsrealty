@@ -1,15 +1,13 @@
 <template>
-    <div class="Rentals mt-40">
-        <RentProperty></RentProperty>
-    </div>
+        <CondosProperty></CondosProperty>
 </template>
 
 <script>
-import RentProperty from '@/components/RentProperty.vue';
+import CondosProperty from '@/components/CondosProperty.vue';
 
 export default {
     components: {
-        RentProperty
+        CondosProperty
     }
 }
 </script>

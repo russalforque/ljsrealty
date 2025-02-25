@@ -3,14 +3,14 @@
     <SliderPage></SliderPage>
     <!-- Property Info -->
     <div class="w-[130vh] max-w-full top-80 absolute opacity-100 inset-0 flex flex-col items-center justify-center">
-      <div class="bg-[#181A1E] text-[#f7f7f7] p-10 w-full md:max-w-sm opacity-90 h-[65vh] md:h-[45vh]">
-        <h1 class="text-xl md:text-3xl font-bold mb-2 text-center md:text-left">STUNNING 6 BED HOUSE IN THE HEART OF THE
+      <div class="bg-[#181A1E] text-[#f7f7f7] p-10 w-full md:max-w-sm opacity-90 h-[65vh] md:h-[46vh]">
+        <h1 class="text-xl md:text-2xl font-bold mb-2 text-center md:text-left">STUNNING 6 BED HOUSE IN THE HEART OF THE
           CITY</h1>
         <p class="text-lg md:text-sm mb-4 text-start md:text-left">This beautiful 6-bedroom house offers spacious living
           in a prime city location. Featuring modern interiors, a fully equipped kitchen, and a private garden, it’s
           perfect for families or those who love to entertain.</p>
         <hr class="border-gray-400 mb-4" />
-        <p class="text-2xl md:text-xl font-bold mb-4 text-center">$2,000,000</p>
+        <p class="text-2xl md:text-3xl font-bold mb-4 text-center">$2,000,000</p>
         <div class="flex justify-center">
           <button class="border border-white text-white py-2 px-4 w-full hover:bg-white hover:text-blue-900 transition">
             ALL SALES
@@ -18,36 +18,67 @@
         </div>
       </div>
     </div>
+    <SalesPage></SalesPage>
+    <!--CONDOS-->
+    <div class="flex flex-col items-center justify-center p-5">
+        <h2 class="text-1xl md:text-2xl lg:text-3xl font-bold mb-20 text-center uppercase">condominiums</h2>
 
-    <div class="max-w-6xl mt-10 mx-auto py-10">
-      <h1 class="text-3xl font-bold text-center text-gray-800 mb-10 mt-60">LATEST PROPERTIES FOR SALE</h1>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
-        <div v-for="property in forSaleProperties" :key="property.id" class="rounded-lg ">
-          <img :src="property.image" alt="Property Image" class="w-full h-[50%] object-cover mb-4">
-          <div class="">
-            <h2 class="text-xl font-bold text-gray-800 mb-3">{{ property.name }}</h2>
-            <p class="text-md text-gray-600 mb-3">{{ property.location }}</p>
-            <p class="text-lg text-gray-600 mb-3">{{ property.price }}</p>
-            <p class="text-sm text-yellow-600 mb-3">{{ property.bedrooms }} Bedrooms</p>
-            <p class="text-gray-500 text-sm mb-5">{{ property.description }}</p>
-            <button
-              class="border border-black px-4 py-2 uppercase text-sm hover:bg-black hover:text-white transition duration-300">
-              Read More
-            </button>
-          </div>
+        <!-- Property 1 -->
+        <div class="flex flex-col md:flex-row overflow-hidden max-w-screen-sm md:mr-20 lg:mr-40 xl:mr-60">
+            <div class="md:w-1/2 h-[43vh] relative">
+                <img src="images/spainvilla.jpg" alt="Property" class="w-full h-full object-cover">
+                <span class="absolute opacity-60 bottom-0.5 left-0.5 bg-black text-white px-5 py-2 text-base md:text-lg">$500,000</span>
+            </div>
+
+            <div class="md:w-1/2 p-6 md:mt-0">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">ALTON</h3>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">AVENUE</h3>
+                <p class="font-semibold text-sm md:text-base">5 bedrooms</p>
+                <p class="text-gray-700 text-sm md:text-base mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore velit quo ipsam tempore laboriosam laborum beatae, architecto doloremque porro voluptas.</p>
+                <button class="border border-black px-4 py-2 uppercase text-xs md:text-sm hover:bg-black hover:text-white transition duration-300">
+                    Read More
+                </button>
+            </div>
         </div>
-      </div>
+
+        <!-- Property 2 -->
+        <div class="flex flex-col md:flex-row-reverse overflow-hidden max-w-screen-sm mt-20 md:ml-20 lg:ml-40 xl:ml-60">
+            <div class="md:w-1/2 h-[43vh] relative">
+                <img src="images/unitedstates.jpg" alt="Property" class="w-full h-full object-cover">
+                <span class="absolute opacity-60 bottom-0.5 left-0.5 bg-black text-white px-5 py-2 text-base md:text-lg">$500,000</span>
+            </div>
+
+            <div class="md:w-1/2 p-6 md:mt-0">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">ALTON</h3>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">AVENUE</h3>
+                <p class="font-semibold text-sm md:text-base">5 bedrooms</p>
+                <p class="text-gray-700 text-sm md:text-base mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore velit quo ipsam tempore laboriosam laborum beatae, architecto doloremque porro voluptas.</p>
+                <button class="border border-black px-4 py-2 uppercase text-xs md:text-sm hover:bg-black hover:text-white transition duration-300">
+                    Read More
+                </button>
+            </div>
+        </div>
+
+        <!-- Property 3 -->
+          <div class="flex flex-col md:flex-row overflow-hidden max-w-screen-sm mt-20 md:mr-20 lg:mr-40 xl:mr-60">
+            <div class="md:w-1/2 h-[43vh] relative">
+                <img src="images/spainvilla.jpg" alt="Property" class="w-full h-full object-cover">
+                <span class="absolute opacity-60 bottom-0.5 left-0.5 bg-black text-white px-5 py-2 text-base md:text-lg">$500,000</span>
+            </div>
+
+            <div class="md:w-1/2 p-6 md:mt-0">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">ALTON</h3>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">AVENUE</h3>
+                <p class="font-semibold text-sm md:text-base">5 bedrooms</p>
+                <p class="text-gray-700 text-sm md:text-base mb-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore velit quo ipsam tempore laboriosam laborum beatae, architecto doloremque porro voluptas.</p>
+                <button class="border border-black px-4 py-2 uppercase text-xs md:text-sm hover:bg-black hover:text-white transition duration-300">
+                   Read More
+                </button>
+            </div>
+        </div>
     </div>
-
-    <RentProperty></RentProperty>
-
-    <TesteMonials></TesteMonials>
-
-
-
     <FooTer></FooTer>
   </div>
-
 </template>
 
 
@@ -55,15 +86,14 @@
 <script>
 import SliderPage from './SliderPage.vue';
 import FooTer from './FooTer.vue';
-import RentProperty from './RentProperty.vue';
-import TesteMonials from './TesteMonials.vue';
+import SalesPage from './SalesPage.vue';
+
 export default {
   name: 'LatestProperties',
   components: {
     SliderPage,
     FooTer,
-    RentProperty,
-    TesteMonials
+    SalesPage,
   },
   data() {
     return {
@@ -75,7 +105,7 @@ export default {
           price: '₱ 6,800,000+',
           bedrooms: 3,
           image: 'images/PropertyOne.jpg',
-          description: "AFFORDABLE POCKET SUBDIVISION NOAH TOWNHOUSE READY FOR OCCUPANCY.INVEST IN A PLACE YOU CAN CALL YOUR OWN."
+          description: "AFFORDABLE POCKET SUBDIVISION NOAH TOWNHOUSE READY FOR OCCUPANCY PERFECT FOR GROWING FAMILY HERE TO ENJOYS LIFE MOST CHERISHED AND MEANINGFUL MOMENTS.INVEST IN A PLACE YOU CAN CALL YOUR OWN."
         },
         {
           id: 2,
@@ -89,10 +119,11 @@ export default {
         {
           id: 3,
           name: 'Noah Town House',
+          location: 'Tungkop Minglanilla Cebu',
           price: '$790,000',
           bedrooms: 6,
           image: 'images/PropertyOne.jpg',
-          description: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
+          description: "KAHALE RESIDENCES is your secured, convemient and private paradise perfect for a growing family here to enjoy life’s most cherished and meaningful moments.170 meters from the Highway"
         }
       ],
       rentalProperties: [
@@ -112,14 +143,24 @@ export default {
           image: 'https://via.placeholder.com/400x300',
           description: "I'm a paragraph. Click here to add your own text and edit me. It's easy."
         }
-      ]
+      ],
+      showModal: false,
+      selectedProperty: {},
     }
+  },
+  methods: {
+    openModal(property) {
+      this.selectedProperty = property;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+    },
   },
 }
 </script>
 
 <style scoped>
-/* Optional: Style tweaks for better visuals */
 h1 {
   letter-spacing: 1px;
 }

@@ -5,7 +5,7 @@
         <img src="images/ljsLogos.png" class="h-10" alt="Logo">
       </a>
       <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-        <a class="mt-4 text-sm font-semibold">63+ 123-456-789</a>
+        <a class="mt-4 text-sm font-semibold">+63 9562860511</a>
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -19,10 +19,10 @@
             <router-link to="/" class="nav-link" exact>home</router-link>
           </li>
           <li>
-            <router-link to="/about" class="nav-link">sales</router-link>
+            <router-link to="/sales" class="nav-link">sales</router-link>
           </li>
           <li>
-            <router-link to="/rentals" class="nav-link">rentals</router-link>
+            <router-link to="/rentals" class="nav-link">condos</router-link>
           </li>
           <li>
             <router-link to="/contact" class="nav-link">contact</router-link>
@@ -36,7 +36,7 @@
 <style scoped>
 .nav-link {
   position: relative;
-  transition: color 0.3s ease;
+  transition: color 0.6s ease;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
 }
@@ -50,7 +50,7 @@
   bottom: 0px;
   left: 0;
   background-color: #333;
-  transition: width 0.3s ease;
+  transition: width 0.6s ease;
 }
 
 .nav-link:hover::after {
